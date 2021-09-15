@@ -21,24 +21,26 @@ The first slide must also have the active class, in whose CSS code it contains t
 The manual panel must contain each of the elements that represent each slide with the class "selector" and the attribute data-id = "(number)", where number must start at 0.
 The first selector must contain the "active" class that will indicate the visible slide.
 
-:::html
+~~~
 <div class="slider-panel">
   <span class="selector active" data-id="0"></span>
   <span class="selector" data-id="1"></span>
 </div>
+~~~
 
 The elements that make up the back and forward buttons must have the class "previous" and "next" respectively.
 
 The duration that each slide remains visible is eight seconds. This value can be modified by entering (in milliseconds) the desired duration time in the call to the function.
 
 ### carousel.js
-:::js
+~~~
   document.addEventListener ('DOMContentLoaded', (e) => {
-   carousel (10000);
+    carousel (10000);
   })
+~~~
 ### carousel-min.js
-  :::js
-    document.addEventListener ("DOMContentLoaded", e => {carousel (10000)});
-
+~~~
+  document.addEventListener ("DOMContentLoaded", e => {carousel (10000)});
+~~~
 ## How to contribute
 You can create a pull request to the project
