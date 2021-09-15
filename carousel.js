@@ -25,7 +25,7 @@ function carousel(TIME = 8000){
  }
 
  const $slides = document.querySelectorAll('.slider-slide'),
-  $prevBtn = document.querySelector('.prev'),
+  $prevBtn = document.querySelector('.previous'),
   $nextBtn = document.querySelector('.next'),
   $selector = document.querySelectorAll('.selector');
   
