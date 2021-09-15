@@ -1,4 +1,4 @@
-function carousel(TIME = 8000){
+function carousel(time = 8000){
   
 //   Previous button functionality.
   function prev(){
@@ -31,7 +31,7 @@ function carousel(TIME = 8000){
   $nextBtn = document.querySelector('.next'),
   $selector = document.querySelectorAll('.selector');
   
-  let nextSlide = setInterval(next, TIME);
+  let nextSlide = setInterval(next, time);
   
   let i = 0;
 
@@ -51,7 +51,7 @@ function carousel(TIME = 8000){
     
     $slides[i].classList.add('active');
     $selector[i].classList.add('active');
-    nextSlide = setInterval(next, TIME);
+    nextSlide = setInterval(next, time);
    }
   }
 
@@ -63,7 +63,7 @@ function carousel(TIME = 8000){
   
    if(e.target === $nextBtn) next();
 
-   nextSlide = setInterval(next, TIME);
+   nextSlide = setInterval(next, time);
   }
  })
 }
