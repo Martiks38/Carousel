@@ -32,13 +32,13 @@ The elements that make up the back and forward buttons must have the class "prev
 
 The duration that each slide remains visible is eight seconds. This value can be modified by entering (in milliseconds) the desired duration time in the call to the function.
 
-### carousel.js
+##### carousel.js
 ~~~
   document.addEventListener ('DOMContentLoaded', (e) => {
     carousel (10000);
   })
 ~~~
-### carousel-min.js
+##### carousel-min.js
 ~~~
   document.addEventListener ("DOMContentLoaded", e => {carousel (10000)});
 ~~~
