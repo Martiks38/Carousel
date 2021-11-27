@@ -1,7 +1,6 @@
 function carousel(time = 8000){
   
-//   Previous button functionality.
-  function prev(){
+  function previousButton(){
     $slides[i].classList.remove('active');
     $selector[i].classList.remove('active');
    
@@ -13,8 +12,7 @@ function carousel(time = 8000){
     $selector[i].classList.add('active');
  }
 
-//   Next button functionality.
- function next(){
+ function nextButton(){
    $slides[i].classList.remove('active');
    $selector[i].classList.remove('active');
    
@@ -55,13 +53,12 @@ function carousel(time = 8000){
    }
   }
 
-//    Detects if the click was made on the previous or next button. And how you should act according to the case.
   if(e.target === $prevBtn || e.target === $nextBtn){
    clearInterval(nextSlide);
 
-   if(e.target === $prevBtn) prev();
+   if(e.target === $prevBtn) previousButton();
   
-   if(e.target === $nextBtn) next();
+   if(e.target === $nextBtn) nextButton();
 
    nextSlide = setInterval(next, time);
   }
